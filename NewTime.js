@@ -68,18 +68,8 @@ function setup() {
     });
     Composite.add(world, mouseConstraint);
 
-    // Engine.run(engine);
-    const runner = Runner.create();
-    Runner.run(runner, engine);
+    Engine.run(engine);
 
-
-
-
-
-
-
-
-    
     // Maussteuerung
     Events.on(mouseConstraint, 'startdrag', function (event) {
         if (event.body === pendulum) {
